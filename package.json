@@ -4,7 +4,6 @@
   "description": "Easy JSON parsing js component for Swift in iOS/OS X",
   "main": "EasyJSON.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "uglify -s $PWD/EasyJSON.js -o $PWD/EasyJSON.min.js"
   },
   "repository": {
