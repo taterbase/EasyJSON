@@ -1,0 +1,6 @@
+language: objective-c
+before_script:
+    - brew update && brew upgrade xctool
+xcode_project: EasyJSON.xcodeproj
+xcode_scheme: EasyJSONTests
+xcode_sdk: iphonesimulator

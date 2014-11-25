@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Meshable. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for EasyJSON.
 FOUNDATION_EXPORT double EasyJSONVersionNumber;

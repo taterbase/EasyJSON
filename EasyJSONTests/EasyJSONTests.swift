@@ -6,10 +6,11 @@
 //  Copyright (c) 2014 Meshable. All rights reserved.
 //
 
-import UIKit
+import EasyJSON
 import XCTest
 
 class EasyJSONTests: XCTestCase {
+    var json = EasyJSON(json: "{\"name\": \"henry\", \"age\": 23, \"friends\": [{\"name\": \"john\", \"friendly\": true}]}")
     
     override func setUp() {
         super.setUp()
@@ -21,16 +22,13 @@ class EasyJSONTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func test() {
         // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+        XCTAssert(json["name"].string == "henry", "should be able to retrieve string values")
+        XCTAssert(json["age"].number == 23, "should be able to retrieve number values")
+        XCTAssert(json["friends"].array?.count == 1, "should be able to retrieve arrays")
+        XCTAssert(json["friends"][0]["friendly"].boolean!, "should be able to grab boolean values")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
-    }
     
 }

@@ -10,6 +10,8 @@
 		DA746DA31A24162F00B30496 /* EasyJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = DA746DA21A24162F00B30496 /* EasyJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA746DA91A24162F00B30496 /* EasyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA746D9D1A24162F00B30496 /* EasyJSON.framework */; };
 		DA746DB01A24162F00B30496 /* EasyJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA746DAF1A24162F00B30496 /* EasyJSONTests.swift */; };
+		DA746DBA1A2416A000B30496 /* EasyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA746DB91A2416A000B30496 /* EasyJSON.swift */; };
+		DA746DBB1A241D4400B30496 /* EasyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA746DB91A2416A000B30496 /* EasyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,7 @@
 		DA746DA81A24162F00B30496 /* EasyJSONTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyJSONTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA746DAE1A24162F00B30496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA746DAF1A24162F00B30496 /* EasyJSONTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyJSONTests.swift; sourceTree = "<group>"; };
+		DA746DB91A2416A000B30496 /* EasyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,7 @@
 			children = (
 				DA746DA21A24162F00B30496 /* EasyJSON.h */,
 				DA746DA01A24162F00B30496 /* Supporting Files */,
+				DA746DB91A2416A000B30496 /* EasyJSON.swift */,
 			);
 			path = EasyJSON;
 			sourceTree = "<group>";
@@ -209,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA746DBA1A2416A000B30496 /* EasyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA746DB01A24162F00B30496 /* EasyJSONTests.swift in Sources */,
+				DA746DBB1A241D4400B30496 /* EasyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +325,7 @@
 		DA746DB41A24162F00B30496 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -328,12 +335,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		DA746DB51A24162F00B30496 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;

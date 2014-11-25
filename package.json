@@ -1,0 +1,31 @@
+{
+  "name": "EasyJSON",
+  "version": "1.0.0",
+  "description": "Easy JSON parsing js component for Swift in iOS/OS X",
+  "main": "EasyJSON.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "uglify -s $PWD/EasyJSON.js -o $PWD/EasyJSON.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:taterbase/EasyJSON.git"
+  },
+  "keywords": [
+    "easy",
+    "json",
+    "swift",
+    "xcode",
+    "ios",
+    "osx"
+  ],
+  "author": "taterbase",
+  "license": "Apache2",
+  "bugs": {
+    "url": "https://github.com/taterbase/EasyJSON/issues"
+  },
+  "homepage": "https://github.com/taterbase/EasyJSON",
+  "devDependencies": {
+    "uglify": "^0.1.0"
+  }
+}
