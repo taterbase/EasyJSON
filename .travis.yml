@@ -1,4 +1,7 @@
 language: objective-c
+before_script:
+  - brew remove --force xctool
+  - brew install xctool --HEAD
 xcode_project: EasyJSON.xcodeproj
 xcode_scheme: EasyJSONTests
 xcode_sdk: iphonesimulator
